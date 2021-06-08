@@ -1,0 +1,79 @@
+/* install fonts */
+    @font-face {
+        font-family: nunitoSans;
+        src: url('fonts/NunitoSans-Bold.ttf')
+    }
+
+    @font-face {
+        font-family: monoton;
+        src: url('fonts/Monoton-Regular.ttf');
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+    background-color: #939393;
+}
+
+.container .web-logo {
+    font-family: nunitoSans;
+    font-size: 30px;
+    padding: 20px 15px;
+    float: left;
+    font-weight: bolder;
+}
+
+main {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-image: url('images/images-bg1.jpg');
+    background-size: cover;
+}
+
+main .web-desc {
+    font-family: nunitoSans;
+    font-size: 40px;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: 5px;
+    font-weight: bold;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+main .team-desc {
+    font-family: nunitoSans;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    opacity: 0.9;
+
+}
+
+.team-profiles {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+
+}
+
+.team-profiles .profile-pict img{
+    height: auto;
+    width: 100%;
+    position: relative;
+    text-align: left;
+}
+
+.team-profiles .profile-pict p {
+    position: absolute;
+    width: 25%;
+    color: rgb(27, 177, 44);
+    font-size: 100px;
+}
