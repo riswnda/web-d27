@@ -31,8 +31,10 @@ header {
 main {
     width: 100%;
     padding: 50px 0;
+    margin-bottom: 30px;
     text-align: center;
-    background-image: url('images/images-bg1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('images/images-bg1.jpg');
     background-size: cover;
 }
 
@@ -54,26 +56,40 @@ main .team-desc {
     line-height: 1.5;
     letter-spacing: 2px;
     opacity: 0.9;
-
 }
 
-.team-profiles {
-    width: 100%;
-    height: auto;
-    padding-bottom: 50px;
-
+/*  Pembagian kolom jadi 5 */
+.column {
+    float: left;
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 0 5px;
 }
 
-.team-profiles .profile-pict img{
-    height: auto;
-    width: 100%;
-    position: relative;
-    text-align: left;
+/* kolom profile ditampilkan sejajar kebawah saat di layar kecil */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
 }
 
-.team-profiles .profile-pict p {
-    position: absolute;
-    width: 25%;
-    color: rgb(27, 177, 44);
-    font-size: 100px;
+/* menambahkan efek shadow ke kelas card*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* nambah padding didalam container */
+.container {
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.title {
+    color:grey;
 }
