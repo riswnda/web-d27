@@ -47,6 +47,7 @@ main .web-desc {
   font-weight: bold;
   opacity: 0.9;
   margin-bottom: 10px;
+  animation: moveInTop 1s ease-out;
 }
 
 main .team-desc {
@@ -56,7 +57,127 @@ main .team-desc {
   line-height: 1.5;
   letter-spacing: 2px;
   opacity: 0.9;
+  animation: moveInBottom 1s ease-out 0.2s;
 }
+
+/* Animasi untuk header */
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  80% {
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Bagian Konten Body */
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0 90px 0;
+}
+
+.content-img {
+  display: flex;
+  align-items: center;
+}
+
+.content-img img {
+  max-width: 650px;
+  margin-right: 40px;
+}
+
+.content-text {
+  width: 50%;
+}
+
+.content-text h1 {
+  font-family: nunitoSans;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.content-text p {
+  font-family: nunitoSans;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.btn-content {
+  text-decoration: none;
+  padding: 12px 16px;
+  font-family: nunitoSans;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(147, 147, 147);
+  border-radius: 40px;
+  transition: background-color 0.5s ease;
+}
+.btn-content:hover {
+  background-color: black;
+}
+
+/* Responsive Breakpoint */
+/* Smartphone */
+@media screen and (max-width: 575.98px) {
+  .content-img img {
+    width: 80px;
+    margin-right: 0;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content-img {
+    width: 100%;
+  }
+
+  .content-img img {
+    width: 100%;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .content-text {
+    width: 100%;
+  }
+
+  .content-text h1 {
+    font-size: 30px;
+  }
+
+  .content-text p {
+    font-size: 16px;
+  }
+
+  .btn-content {
+    font-size: 16px;
+  }
+}
+
+/* Akhir Konten Body */
 
 /*  Pembagian kolom jadi 5 */
 .column {
