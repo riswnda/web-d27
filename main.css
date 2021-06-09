@@ -17,7 +17,7 @@ header {
   width: 100%;
   overflow: hidden;
   z-index: 10;
-  background-color: #1e90ff;
+  background-color: #f1f1f1;
 }
 
 .header-left {
@@ -29,16 +29,16 @@ header {
 }
 
 .header-right a {
-  line-height: 65px;
+  line-height: 30px;
   padding: 0 25px;
-  color: white;
+  color: black;
   display: block;
   float: left;
   transition: all 0.5s;
 }
 
 .header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .container .web-logo {
@@ -113,6 +113,8 @@ main .team-desc {
   align-items: center;
   justify-content: center;
   padding: 60px 0 90px 0;
+  margin-bottom: 60px;
+  background-color: #f0f0f0;
 }
 
 .content-img {
