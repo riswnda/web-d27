@@ -73,10 +73,10 @@ main .web-desc {
 
 main .team-desc {
   font-family: nunitoSans;
-  font-size: 30px;
+  font-size: 22px;
   color: #fff;
   line-height: 1.5;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   opacity: 0.9;
   animation: moveInBottom 1s ease-out 0.2s;
 }
